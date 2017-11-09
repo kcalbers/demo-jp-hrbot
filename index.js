@@ -2,7 +2,7 @@ const slack = require('tinyspeck'),
   events = require('./events.json'),
   redis = require('./redis'),
   _ = require('lodash'),
-  handleDialog = require('./handledialog.js'),
+  handleDialog = require('./handleDialog.js'),
   handleSubmit = require('./handleSubmit.js')
 
 
