@@ -3,7 +3,7 @@
     "on": "有給",
     "response_type": "ephemeral",
     "channel": "<%=session.channel_id%>",
-    "text": "今今年のあなたの残りの有給休暇日数は`20日`です。",
+    "text": "今今年のあなたの残りの有給休暇日数は `20日` です。",
     "attachments": [
       {
         "fallback": "Pre-filled because you have actions in your attachment.",
@@ -31,12 +31,12 @@
     "on": "正月休み",
     "response_type": "ephemeral",
     "channel": "<%=session.channel_id%>",
-    "text": "年末年始のお休みは`12月27日`から`1月3日`までです。"
+    "text": "年末年始のお休みは `12月27日` から `1月3日` までです。"
   },
   {
     "on": "健康診断",
     "channel": "<%=session.channel_id%>",
-    "text": "あなたの次の健康診断は`12月1日午後3時`に大手町病院で予定されています。",
+    "text": "あなたの次の健康診断は `12月1日午後3時` に大手町病院で予定されています。",
     "attachments": [
       {
         "fallback": "Pre-filled because you have actions in your attachment.",
