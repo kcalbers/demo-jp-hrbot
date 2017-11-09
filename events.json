@@ -1,0 +1,105 @@
+[
+  {
+    "on": "有給",
+    "response_type": "ephemeral",
+    "channel": "<%=session.channel_id%>",
+    "text": "今年のあなたの残りの有給休暇日数は`20日`です。",
+    "attachments": [
+      {
+        "fallback": "Pre-filled because you have actions in your attachment.",
+        "color": "#d2dde1",
+        "mrkdwn_in": [
+          "text",
+          "pretext",
+          "fields"
+        ],
+        "callback_id": "Pre-filled because you have actions in your attachment.",
+        "attachment_type": "default",
+        "actions": [
+          {
+            "name": "apply",
+            "text": "休暇申請を行う",
+            "type": "button",
+            "style": "default",
+            "value": "apply"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "on": "健康診断",
+    "response_type": "ephemeral",
+    "channel": "<%=session.channel_id%>",
+    "text": "年末年始のお休みは`12月27日`から`1月3日`までです。"
+  },
+  {
+    "on": "正月休み",
+    "channel": "<%=session.channel_id%>",
+    "text": "あなたの次の健康診断は`12月1日午後3時`に大手町病院で予定されています。",
+    "attachments": [
+      {
+        "fallback": "Pre-filled because you have actions in your attachment.",
+        "color": "#d2dde1",
+        "text": "https://goo.gl/maps/FvCvT18vL5R2",
+        "mrkdwn_in": [
+          "text",
+          "pretext",
+          "fields"
+        ],
+        "callback_id": "Pre-filled because you have actions in your attachment.",
+        "attachment_type": "default",
+        "title": "大手町病院",
+        "actions": [
+          {
+            "name": "change",
+            "text": "変更",
+            "type": "button",
+            "style": "default",
+            "value": "change"
+          },
+          {
+            "name": "confirm",
+            "text": "詳細を確認",
+            "type": "button",
+            "style": "default",
+            "value": "confirm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "on": "/販売",
+    "text": "現時点での総売上のレポートです",
+    "attachments": [
+      {
+        "title_link": "https://www.dropbox.com/s/iayh7f1trxs7gps/sales_revenue.jpeg?dl=1",
+        "color": "#d2dde1",
+        "image_url": "https://www.dropbox.com/s/iayh7f1trxs7gps/sales_revenue.jpeg?dl=1",
+        "mrkdwn_in": [
+          "text",
+          "pretext",
+          "fields"
+        ],
+        "attachment_type": "default",
+        "title": "総売上",
+        "fields": [
+          {
+            "title": "関東 55%",
+            "value": "東京 44%\n神奈川 6%\n千葉 5%",
+            "short": true
+          },
+          {
+            "title": "関西 45%",
+            "value": "大阪 33%\n兵庫 6%\n京都 6%",
+            "short": true
+          },
+          {
+            "short": true
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "demo-jp-hrbot",
+  "version": "1.0.0",
+  "description": "HR Demo bot for JP Sales team",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Kevin Albers",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "redis": "^2.8.0",
+    "tinyspeck": "^1.4.2"
+  }
+}
