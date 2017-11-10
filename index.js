@@ -27,7 +27,8 @@ slack.on('/install', (req, res) => {
 
 // interactive message handler
 slack.on('message', payload => {
-    let { team_id, bot_id, channel_id, user_id } = payload
+  
+  let { team_id, bot_id, channel_id, user_id } = payload
     if (bot_id) return // ignore bots to avoid infinite loops
     let getAuth = redis.get(team_id)
     let getSession = redis.get(`${user_id}_${channel_id}`)
@@ -37,15 +38,17 @@ slack.on('message', payload => {
 
   slack.on('interactive_message',  payload => {
 
-    let { team_id, bot_id, channel_id, user_id, type } = payload
+    let { team_id, bot_id, channel_id, user_id, type, original_message, response_url } = payload
     if (bot_id) return // ignore bots to avoid infinite loops
     let getAuth = redis.get(team_id)
     let getSession = redis.get(`${user_id}_${channel_id}`)
     if (type === 'dialog_submission'){
-     
+     console.log(payload)
       handleSubmit(payload);
-    } else {
+    } else if (original_message.text === 'あなたの次の健康診断は `12月1日午後3時` に大手町病院で予定されています。'){
+      console.log('success');
       
+    } else {
       handleDialog(payload);
     }
     

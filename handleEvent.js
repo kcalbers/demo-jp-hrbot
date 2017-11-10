@@ -4,10 +4,10 @@ const slack = require('tinyspeck'),
 
 module.exports = function (body) {
     let { event, team_id } = body;
-    console.log(body);
+
     let getAuth = redis.get(body.team_id);
     getAuth.then(function (auth) {
-        console.log(auth);
+    
         let postMessage = {
             channel: event.channel,
             token: auth.bot.bot_access_token,

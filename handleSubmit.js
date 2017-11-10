@@ -2,7 +2,7 @@ const slack = require('tinyspeck'),
 redis = require('./redis')
 
 module.exports = function (body) {
-   console.log(body);
+
 let getAuth = redis.get(body.team_id);
 getAuth.then(function (auth) {
 

@@ -2,6 +2,7 @@ const slack = require('tinyspeck'),
     redis = require('./redis')
 
 module.exports = function (body) {
+   
     // Retrieving payload information
     var triggerID = body.trigger_id;
     let getAuth = redis.get(body.team_id);
@@ -30,7 +31,7 @@ module.exports = function (body) {
 
         }
         slack.send('dialog.open', openMsg).then(data => {
-            console.log(data);
+            // console.log(data);
         })
     })
 
