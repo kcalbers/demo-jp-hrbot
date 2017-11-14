@@ -42,7 +42,7 @@
         "fallback": "Pre-filled because you have actions in your attachment.",
         "color": "#d2dde1",
         "text": "https://goo.gl/maps/FvCvT18vL5R2",
-        "image_url": "https://www.dropbox.com/s/09z61xttwvz3bw2/Screen%20Shot%202017-11-13%20at%207.10.16%20PM.png",
+        "image_url": "https://raw.githubusercontent.com/kcalbers/demo-jp-hrbot/master/jp.png",
         "mrkdwn_in": [
           "text",
           "pretext",
