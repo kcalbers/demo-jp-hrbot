@@ -37,12 +37,12 @@
     "on": "健康診断",
     "channel": "<%=session.channel_id%>",
     "text": "あなたの次の健康診断は `12月1日午後3時` に大手町病院で予定されています。",
-    "image_url": "https://www.dropbox.com/s/09z61xttwvz3bw2/Screen%20Shot%202017-11-13%20at%207.10.16%20PM.png",
     "attachments": [
       {
         "fallback": "Pre-filled because you have actions in your attachment.",
         "color": "#d2dde1",
         "text": "https://goo.gl/maps/FvCvT18vL5R2",
+        "image_url": "https://www.dropbox.com/s/09z61xttwvz3bw2/Screen%20Shot%202017-11-13%20at%207.10.16%20PM.png",
         "mrkdwn_in": [
           "text",
           "pretext",
