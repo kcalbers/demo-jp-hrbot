@@ -3,7 +3,7 @@
     "on": "有給",
     "response_type": "ephemeral",
     "channel": "<%=session.channel_id%>",
-    "text": "今今年のあなたの残りの有給休暇日数は `20日` です。",
+    "text": "今年のあなたの残りの有給休暇日数は `20日` です。",
     "attachments": [
       {
         "fallback": "Pre-filled because you have actions in your attachment.",
